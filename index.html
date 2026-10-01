@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WanderView Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">MY VISUAL JOURNEY</p>
+
+            <h1>WanderView</h1>
+
+            <p>
+                A collection of beautiful places,
+                peaceful nature and unforgettable moments.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- Filter Section -->
+
+    <section class="filter-section">
+
+        <button class="filter active"
+                data-filter="all">
+            All
+        </button>
+
+        <button class="filter"
+                data-filter="nature">
+            Nature
+        </button>
+
+        <button class="filter"
+                data-filter="places">
+            Places
+        </button>
+
+        <button class="filter"
+                data-filter="adventure">
+            Adventure
+        </button>
+
+    </section>
+
+
+    <!-- Gallery -->
+
+    <main class="gallery">
+
+        <!-- Image 1 -->
+
+        <article class="card"
+                 data-category="nature">
+
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                alt="Mountain landscape">
+
+            <div class="overlay">
+
+                <span>Nature</span>
+
+                <h2>Mountain Escape</h2>
+
+            </div>
+
+        </article>
+
+
+        <!-- Image 2 -->
+
+        <article class="card"
+                 data-category="places">
+
+            <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85"
+                alt="City landmark">
+
+            <div class="overlay">
+
+                <span>Places</span>
+
+                <h2>City Lights</h2>
+
+            </div>
+
+        </article>
+
+
+        <!-- Image 3 -->
+
+        <article class="card"
+                 data-category="adventure">
+
+            <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+                alt="Mountain adventure">
+
+            <div class="overlay">
+
+                <span>Adventure</span>
+
+                <h2>Into the Wild</h2>
+
+            </div>
+
+        </article>
+
+
+        <!-- Image 4 -->
+
+        <article class="card"
+                 data-category="nature">
+
+            <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=85"
+                alt="Green forest">
+
+            <div class="overlay">
+
+                <span>Nature</span>
+
+                <h2>Forest Dreams</h2>
+
+            </div>
+
+        </article>
+
+
+        <!-- Image 5 -->
+
+        <article class="card"
+                 data-category="places">
+
+            <img
+                src="https://images.unsplash.com/photo-1470214304380-aadaedcfff1b?auto=format&fit=crop&w=900&q=85"
+                alt="Beautiful destination">
+
+            <div class="overlay">
+
+                <span>Places</span>
+
+                <h2>Hidden Destination</h2>
+
+            </div>
+
+        </article>
+
+
+        <!-- Image 6 -->
+
+        <article class="card"
+                 data-category="adventure">
+
+            <img
+                src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=85"
+                alt="Hiking adventure">
+
+            <div class="overlay">
+
+                <span>Adventure</span>
+
+                <h2>Keep Exploring</h2>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="close"
+                id="close">
+            ×
+        </button>
+
+        <button class="navigation previous"
+                id="previous">
+            ‹
+        </button>
+
+        <div class="preview">
+
+            <img id="previewImage"
+                 src=""
+                 alt="Gallery preview">
+
+            <p id="previewTitle"></p>
+
+        </div>
+
+        <button class="navigation next"
+                id="next">
+            ›
+        </button>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            WanderView © 2026 | Created with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
